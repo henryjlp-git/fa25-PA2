@@ -39,7 +39,7 @@ struct MinHeap {
             if (weightArr[data[pos]] < weightArr[data[parent]]) {
                 int tmp = data[pos];
                 data[pos] = data[parent];
-                data[parent];
+                data[parent] = tmp;
                 pos = parent;
             } else {
                 break;
